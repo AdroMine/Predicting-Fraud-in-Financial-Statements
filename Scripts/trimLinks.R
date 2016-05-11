@@ -8,3 +8,4 @@ for(i in seq_along(allLinks)){
     if(str %in% files)
         lab[i] <- TRUE
 }
+# used it to remove files from allLinks.txt that were not used to download data.

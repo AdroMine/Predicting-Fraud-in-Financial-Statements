@@ -13,9 +13,9 @@ while(inherits(try(dr$open()),'try-error'))
 
 setwd("D:/RData/Dissertation/")
 allLinks <- readLines("StockLinks/allLinks.txt")
-iter <- 2868
+iter <- 1
 total <- length(allLinks)
-count <- 1235
+count <- 0
 ar <- "http://www.moneycontrol.com/annual-report/"
 for(i in iter:4000){
      link <- allLinks[i]

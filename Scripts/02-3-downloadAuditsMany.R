@@ -102,13 +102,8 @@ for(i in iter:total){
                
           # data exists, so go to it.
           we3$clickElement()
-          # cat("\n      Gone back, now try downloading...")
-          # Sys.sleep(2)
           
           report <- auditDown() # download audit
-          
-          # cat("\n      Downloaded successfully...")
-          # now to write it in correct folder
           
           writeLines(report[[1]],paste0("audit",tex,"/",str[2],".txt"))
           
